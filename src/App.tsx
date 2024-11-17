@@ -62,7 +62,7 @@ function App() {
             }}>
                 {messages.map((message) => {
                     // 判断是否为当前用户发送的消息
-                    const isCurrentUser = message.userId === (user?.signInDetails?.loginId || user.username);
+                    const isCurrentUser =  (user?.signInDetails?.loginId || user.username);
 
                     return (
                         <div key={message.id} style={{
